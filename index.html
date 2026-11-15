@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>PaKa Logistics - transport ekspresowy i drobnicowy, przeładunki, magazyn buforowy | Czechowice-Dziedzice</title>
+<meta name="description" content="Transport ekspresowy i drobnicowy, przeładunki i magazynowanie. Baza w Czechowicach-Dziedzicach, magazyn buforowy w powiecie żywieckim przy S1 w stronę Zwardonia.">
+<meta name="theme-color" content="#031837">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="img/hero-tel-720.webp" imagesrcset="img/hero-tel-480.webp 480w, img/hero-tel-720.webp 720w, img/hero-tel-960.webp 960w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-1600.webp" imagesrcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" imagesizes="100vw" media="(min-width:761px)" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/overpass-latin.woff2" crossorigin>
+<style>
+@font-face{font-family:Overpass;font-weight:100 900;font-display:swap;src:url(fonts/overpass-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:Overpass;font-weight:100 900;font-display:swap;src:url(fonts/overpass-latin-ext.woff2) format("woff2");unicode-range:U+0100-02AF,U+1E00-1EFF,U+2C60-2C7F,U+A720-A7FF}
+:root{--navy:#031837;--navy2:#0C2A52;--steel:#24486C;--blue:#1E5BB8;--blue-d:#174A98;--silver:#9CA3AE;--grey:#EEF1F5;--line:#D9DFE7;--txt:#2B3646;--mut:#566273;--pad:clamp(16px,4vw,64px);--max:1480px;--hd:68px;--cut:14px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:var(--hd)}
+body{margin:0;background:#fff;color:var(--txt);font:400 17px/1.6 Overpass,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-weight:800;color:var(--navy);line-height:1.08;margin:0;letter-spacing:-.012em}
+h2{font-size:clamp(30px,3.6vw,50px)}
+h3{font-size:clamp(21px,1.7vw,25px);font-weight:700;line-height:1.2}
+p{margin:0}
+.wrap{width:min(100% - 2*var(--pad),var(--max));margin-inline:auto}
+/* ścięte rogi jak tarcza z logo */
+.tarcza{clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% 100%,0 100%,0 var(--cut))}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 28px;background:var(--blue);color:#fff;font:700 17px/1 Overpass,sans-serif;text-decoration:none;border:0;cursor:pointer;clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);transition:background .2s}
+.btn:hover{background:var(--blue-d)}
+.btn:focus-visible{outline:3px solid #8FB4F0;outline-offset:3px}
+.btn.jasny{background:#fff;color:var(--navy)}
+.btn.jasny:hover{background:#E4EAF3}
+/* separator: droga z przerywanym pasem */
+.droga{display:block;height:10px;width:100%;background:linear-gradient(90deg,var(--navy) 0 60%,transparent 60%) 0 50%/34px 2px repeat-x;border-top:2px solid var(--navy);border-bottom:2px solid var(--navy);opacity:.9}
+.znak{display:inline-block;width:18px;height:20px;background:var(--blue);clip-path:polygon(50% 0,100% 22%,100% 78%,50% 100%,0 78%,0 22%);flex:none}
+.tyt{display:flex;align-items:center;gap:14px}
+.lead{font-size:clamp(17px,1.3vw,20px);color:var(--mut);max-width:62ch}
+
+/* nagłówek */
+.hd{position:sticky;top:0;z-index:50;height:var(--hd);background:#fff;border-bottom:1px solid var(--line)}
+.hd .wrap{height:100%;display:flex;align-items:center;gap:24px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy);flex:none}
+.logo svg{width:44px;height:50px}
+.logo b{font-size:22px;font-weight:800;letter-spacing:-.01em;line-height:1}
+.logo small{display:block;font-size:12px;font-weight:600;color:var(--steel);letter-spacing:.02em;margin-top:2px}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{padding:10px 14px;text-decoration:none;font-weight:600;font-size:16px;color:var(--navy);position:relative}
+.nav a::after{content:"";position:absolute;left:14px;right:14px;bottom:4px;height:2px;background:var(--blue);transform:scaleX(0);transition:transform .2s}
+.nav a:hover::after,.nav a.akt::after{transform:scaleX(1)}
+.hd-tel{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;color:#fff;background:var(--navy);padding:12px 18px}
+.hd-tel:hover{background:var(--steel)}
+.hd-tel svg,.ik{width:18px;height:18px;flex:none}
+.burger{display:none;margin-left:auto;width:48px;height:48px;border:0;background:none;cursor:pointer;padding:12px}
+.burger i{display:block;height:2px;background:var(--navy);margin:6px 0;transition:transform .2s,opacity .2s}
+.menu-otw .burger i:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.menu-otw .burger i:nth-child(2){opacity:0}
+.menu-otw .burger i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+.panel{display:none}
+@media (max-width:1060px){
+ .nav,.hd-tel span{display:none}
+ .burger{display:block;margin-left:0}
+ .hd-tel{margin-left:auto;padding:0;width:48px;height:48px;justify-content:center}
+ .panel{display:block;position:fixed;inset:var(--hd) 0 auto 0;background:#fff;border-bottom:1px solid var(--line);padding:8px var(--pad) 24px;transform:translateY(-8px);opacity:0;visibility:hidden;transition:.2s;z-index:49;box-shadow:0 18px 30px rgba(3,24,55,.12)}
+ .menu-otw .panel{transform:none;opacity:1;visibility:visible}
+ .panel a:not(.btn){display:block;padding:14px 0;border-bottom:1px solid var(--line);font-weight:700;font-size:19px;color:var(--navy);text-decoration:none}
+ .panel a.akt{color:var(--blue)}
+ .panel .btn{margin-top:18px;width:100%}
+}
+@media (max-width:420px){.logo small{display:none}.logo b{font-size:20px}.logo svg{width:40px;height:46px}}
+
+/* hero */
+.hero{position:relative;min-height:calc(100svh - var(--hd));display:flex;flex-direction:column;overflow:hidden;background:#C9D2DC}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%}
+.hero picture img{object-fit:cover;object-position:50% 62%}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(100deg,rgba(255,255,255,.9) 0%,rgba(255,255,255,.72) 26%,rgba(255,255,255,.18) 48%,rgba(255,255,255,0) 60%)}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:34%;z-index:1;background:linear-gradient(0deg,rgba(3,24,55,.78),rgba(3,24,55,0))}
+.hero-in{position:relative;z-index:2;flex:1 0 auto;display:flex;flex-direction:column;justify-content:space-between;gap:32px;padding-block:clamp(40px,9vh,110px) clamp(22px,4vh,40px)}
+.hero h1{font-size:clamp(40px,4.4vw,78px);max-width:13.5ch;line-height:1.02}
+.hero .lead{margin-top:22px;color:#1F2C3E;max-width:40ch;font-size:clamp(18px,1.35vw,22px)}
+.hero .btn{margin-top:30px}
+.hero-dane{display:flex;flex-wrap:wrap;gap:8px 34px;color:#fff;font-weight:600;font-size:16px}
+.hero-dane span{display:flex;align-items:center;gap:10px}
+.hero-dane .znak{background:#fff;width:12px;height:14px}
+@media (max-width:760px){
+ .hero picture img{object-position:50% 100%}
+ .hero::before{background:linear-gradient(180deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.82) 30%,rgba(255,255,255,.3) 46%,rgba(255,255,255,0) 56%)}
+ .hero::after{height:30%}
+ .hero-in{padding-block:clamp(24px,4.5svh,40px) 18px;gap:24px}
+ .hero h1{font-size:clamp(31px,9vw,40px)}
+ .hero .lead{margin-top:14px;font-size:16.5px;line-height:1.5}
+ .hero .btn{margin-top:24px;width:100%}
+ .hero-dane{flex-direction:column;gap:6px;font-size:14.5px}
+}
+@media (min-width:761px) and (max-height:760px){.hero h1{font-size:clamp(36px,3.8vw,60px)}.hero-in{padding-top:36px}}
+
+/* sekcje */
+.sek{padding-block:clamp(64px,8vw,120px)}
+.szara{background:var(--grey)}
+.glowa{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 40px;margin-bottom:clamp(30px,4vw,52px)}
+.glowa .lead{margin-top:16px}
+
+/* usługi - pas kart */
+.pas-box{position:relative}
+.pas{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 3*22px)/4);gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px;cursor:grab}
+.pas::-webkit-scrollbar{display:none}
+.pas.ciagnie{cursor:grabbing;scroll-snap-type:none}
+.karta{scroll-snap-align:start;min-width:0;display:flex;flex-direction:column;background:#fff}
+.karta .fot{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--grey);cursor:zoom-in;border:0;padding:0;width:100%;display:block}
+.karta .fot img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.karta .fot:hover img{transform:scale(1.03)}
+.karta .nr{position:absolute;left:0;bottom:0;background:var(--navy);color:#fff;font-weight:800;font-size:15px;padding:8px 14px 6px}
+.karta h3{margin-top:20px}
+.karta p{margin-top:10px;color:var(--mut);font-size:16.5px}
+.strzalki{display:none;gap:10px}
+.strzalki button{width:52px;height:52px;border:2px solid var(--navy);background:#fff;color:var(--navy);cursor:pointer;font-size:22px;line-height:1;clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px)}
+.strzalki button:disabled{opacity:.3;cursor:default}
+@media (max-width:1180px){.pas{grid-auto-columns:calc((100% - 22px)/2.3)}.strzalki{display:flex}}
+@media (max-width:640px){.pas{grid-auto-columns:82%;gap:16px}}
+
+/* magazyn */
+.mag{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(32px,5vw,90px);align-items:center}
+.mag .fot{position:relative;aspect-ratio:3/2;overflow:hidden;cursor:zoom-in;border:0;padding:0;width:100%;display:block;background:#dfe4ea}
+.mag .fot img{width:100%;height:100%;object-fit:cover}
+.mag .lead{margin-top:20px}
+.lista{list-style:none;margin:26px 0 0;padding:0;border-top:1px solid var(--line)}
+.lista li{display:flex;gap:14px;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--line);color:var(--navy);font-weight:600}
+.lista li::before{content:"";width:10px;height:11px;background:var(--blue);clip-path:polygon(50% 0,100% 22%,100% 78%,50% 100%,0 78%,0 22%);flex:none;transform:translateY(1px)}
+.mag .btn{margin-top:32px}
+@media (max-width:900px){.mag{grid-template-columns:minmax(0,1fr)}}
+
+/* trasa - ciemna */
+.trasa{background:var(--navy);color:#C9D3E0;position:relative;overflow:hidden}
+.trasa h2{color:#fff;max-width:18ch}
+.trasa .lead{color:#C2CDDB;margin-top:18px}
+.trasa-g{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,90px);align-items:center}
+.schemat{margin-top:44px;width:100%;height:auto;display:block}
+.schemat text{font-family:Overpass,sans-serif}
+.trasa .fot{position:relative;aspect-ratio:4/3;overflow:hidden;cursor:zoom-in;border:0;padding:0;width:100%;display:block;background:var(--navy2)}
+.trasa .fot img{width:100%;height:100%;object-fit:cover}
+.punkty{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 30px;margin-top:36px;padding-top:28px;border-top:1px solid rgba(255,255,255,.16)}
+.punkty b{display:block;color:#fff;font-size:19px;font-weight:700;margin-bottom:4px}
+.punkty span{font-size:16px}
+.sch-tel{display:none}
+@media (max-width:900px){.trasa-g{grid-template-columns:minmax(0,1fr)}.trasa .fot{order:-1}}
+@media (max-width:560px){.sch-pc{display:none}.sch-tel{display:block}.punkty{grid-template-columns:minmax(0,1fr)}}
+
+/* kontakt */
+.kont{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,5vw,90px);align-items:start}
+.osoby{display:grid;gap:18px;margin-top:34px}
+.osoba{display:flex;gap:18px;align-items:flex-start;padding:22px;background:var(--grey)}
+.ini{width:58px;height:64px;flex:none;display:grid;place-items:center;background:var(--navy);color:#fff;font-weight:800;font-size:19px;clip-path:polygon(50% 0,100% 22%,100% 78%,50% 100%,0 78%,0 22%)}
+.osoba h3{font-size:21px}
+.osoba .rola{color:var(--steel);font-weight:600;font-size:15.5px;margin-top:2px}
+.osoba a{display:inline-flex;align-items:center;gap:9px;margin-top:10px;margin-right:18px;font-weight:700;color:var(--navy);text-decoration:none;font-size:17px}
+.osoba a:hover{color:var(--blue)}
+.osoba a .ik{color:var(--blue)}
+.osoba .tel{font-size:20px}
+.osoba .mail{font-size:15.5px;font-weight:600;overflow-wrap:anywhere}
+.do-wyceny{margin-top:30px;color:var(--mut);font-size:16.5px}
+.do-wyceny b{color:var(--navy)}
+.form{background:#fff;border:2px solid var(--navy);border-top:8px solid var(--navy);padding:clamp(22px,3vw,40px);--cut:22px}
+.form h3{font-size:clamp(23px,2vw,28px)}
+.form .pod{color:var(--mut);margin-top:6px;font-size:16px}
+.pola{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 18px;margin-top:24px}
+.pole{display:flex;flex-direction:column;gap:6px;min-width:0}
+.pole.cale{grid-column:1/-1}
+.pole label{font-weight:700;font-size:15px;color:var(--navy)}
+.pole input,.pole select,.pole textarea{font:400 17px/1.4 Overpass,sans-serif;color:var(--navy);padding:12px 14px;border:1.5px solid #B9C3D0;background:#fff;border-radius:0;width:100%;min-width:0}
+.pole textarea{min-height:110px;resize:vertical}
+.pole input:focus,.pole select:focus,.pole textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(30,91,184,.18)}
+.rodzaj{display:flex;flex-wrap:wrap;gap:8px}
+.rodzaj label{font-weight:600;font-size:15.5px;cursor:pointer}
+.rodzaj input{position:absolute;opacity:0;width:1px;height:1px}
+.rodzaj span{display:inline-block;padding:9px 14px;border:1.5px solid #B9C3D0;color:var(--navy)}
+.rodzaj input:checked+span{background:var(--navy);border-color:var(--navy);color:#fff}
+.rodzaj input:focus-visible+span{outline:3px solid #8FB4F0}
+.form .btn{margin-top:22px;width:100%}
+.form-info{margin-top:14px;padding:14px 16px;background:var(--grey);color:var(--navy);font-weight:600}
+.zgoda{font-size:13.5px;color:var(--mut);margin-top:12px}
+@media (max-width:980px){.kont{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:520px){.pola{grid-template-columns:minmax(0,1fr)}.osoba{padding:18px;gap:14px}.ini{width:48px;height:54px;font-size:17px}}
+
+/* stopka */
+.st{background:#021127;color:#A9B5C6;padding:0 0 28px;font-size:15.5px}
+.st-gory{display:block;width:100%;height:auto;color:#0C2A52}
+.st-g{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:28px 40px;padding-top:30px}
+.st h4{margin:0 0 12px;color:#fff;font-size:16px;font-weight:700}
+.st a{text-decoration:none}
+.st a:hover{color:#fff}
+.st ul{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.st .logo{color:#fff}
+.st .logo small{color:#8FA3BD}
+.st-o{margin-top:14px;max-width:34ch}
+.st-dol{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);font-size:14px}
+@media (max-width:900px){.st-g{grid-template-columns:repeat(2,minmax(0,1fr))}.st-g>div:first-child{grid-column:1/-1}}
+
+/* pasek mobilny */
+.mob{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;grid-template-columns:1fr 1.4fr;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line);transform:translateY(110%);transition:transform .25s}
+.mob.widac{transform:none}
+.mob a{min-height:48px;font-size:16px;padding:10px 12px}
+.mob .zadzwon{background:#fff;color:var(--navy);border:2px solid var(--navy);clip-path:none}
+@media (max-width:760px){.mob{display:grid}body{padding-bottom:0}}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(2,12,28,.94);display:none;align-items:center;justify-content:center;padding:56px 12px 70px}
+.lb.otw{display:flex}
+.lb img{max-width:min(1500px,100%);max-height:100%;object-fit:contain}
+.lb button{position:absolute;background:rgba(255,255,255,.1);color:#fff;border:0;width:52px;height:52px;font-size:26px;cursor:pointer}
+.lb button:hover{background:rgba(255,255,255,.22)}
+.lb-x{top:10px;right:10px}.lb-p{left:10px;top:50%;transform:translateY(-50%)}.lb-n{right:10px;top:50%;transform:translateY(-50%)}
+.lb-dol{position:absolute;left:0;right:0;bottom:18px;text-align:center;color:#fff;font-size:15px}
+.lb-dol .lb-c{opacity:.6;margin-left:10px}
+
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <symbol id="tarcza" viewBox="0 0 100 112">
+   <path d="M50 3 93 20v64L50 109 7 84V20Z" fill="#031837"/>
+   <path d="M50 10 87 24.5v55L50 102 13 79.5v-55Z" fill="none" stroke="#B4BAC4" stroke-width="2.6"/>
+   <path d="M17 44 31 28l7 7 12-15 12 13 6-6 15 17" fill="none" stroke="#7F97B8" stroke-width="2.4" stroke-linejoin="round"/>
+   <path d="M44 25.5 50 20l6 6.5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/>
+   <path d="M25 60V51.5c0-2.5 1.5-4 4-4.4l5.5-.8 6.3-6.8c.7-.8 1.6-1.1 2.7-1.1H75c1.4 0 2.3.9 2.3 2.3V60Z" fill="#fff"/>
+   <path d="M37 47l4.7-5H48v5Z" fill="#24486C"/>
+   <circle cx="34" cy="60.5" r="4.6" fill="#031837" stroke="#fff" stroke-width="2"/>
+   <circle cx="68" cy="60.5" r="4.6" fill="#031837" stroke="#fff" stroke-width="2"/>
+   <path d="M11 49h9M13 54h7M15 59h5" stroke="#7F97B8" stroke-width="2" stroke-linecap="round"/>
+   <path d="M18 67h64" stroke="#B4BAC4" stroke-width="1.6" stroke-dasharray="6 4"/>
+   <text x="50" y="86" text-anchor="middle" font-family="Overpass,Arial,sans-serif" font-weight="900" font-size="19" fill="#fff">PaKa</text>
+   <text x="50" y="96" text-anchor="middle" font-family="Overpass,Arial,sans-serif" font-weight="700" font-size="7.6" fill="#B4BAC4" letter-spacing=".3">Logistics</text>
+  </symbol>
+  <symbol id="i-tel" viewBox="0 0 20 20"><path d="M6.2 2.5 4 3.2c-1 .4-1.6 1.4-1.4 2.5.9 5.4 4.9 9.4 10.3 10.3 1.1.2 2.1-.4 2.5-1.4l.7-2.2-3.6-1.7-1.6 1.6c-1.9-.9-3.3-2.3-4.2-4.2l1.6-1.6Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 20 20"><path d="M2.5 4.5h15v11h-15Z M2.5 5l7.5 6 7.5-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+ </defs>
+</svg>
+
+<header class="hd" id="hd">
+ <div class="wrap">
+  <a class="logo" href="#start" aria-label="PaKa Logistics - strona główna"><svg aria-hidden="true"><use href="#tarcza"/></svg><span><b>PaKa Logistics</b><small>Czechowice-Dziedzice</small></span></a>
+  <nav class="nav" aria-label="Menu">
+   <a href="#uslugi">Usługi</a><a href="#magazyn">Magazyn buforowy</a><a href="#trasa">Baza i&nbsp;trasa</a><a href="#kontakt">Kontakt</a>
+  </nav>
+  <a class="hd-tel" href="tel:+48500429952" aria-label="Zadzwoń: 500 429 952"><svg class="ik" aria-hidden="true"><use href="#i-tel"/></svg><span>500 429 952</span></a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="panel"><i></i><i></i><i></i></button>
+ </div>
+ <div class="panel" id="panel">
+  <a href="#uslugi">Usługi</a><a href="#magazyn">Magazyn buforowy</a><a href="#trasa">Baza i&nbsp;trasa</a><a href="#kontakt">Kontakt</a>
+  <a class="btn" href="#kontakt">Zapytaj o&nbsp;transport</a>
+ </div>
+</header>
+
+<main>
+<section class="hero" id="start">
+ <picture>
+  <source media="(max-width:760px)" srcset="img/hero-tel-480.webp 480w, img/hero-tel-720.webp 720w, img/hero-tel-960.webp 960w" sizes="100vw" width="720" height="1161">
+  <img src="img/hero-1600.webp" srcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" sizes="100vw" width="1600" height="1067" alt="Biały bus dostawczy na drodze wśród gór" fetchpriority="high" decoding="async">
+ </picture>
+ <div class="wrap hero-in">
+  <div>
+   <h1>Transport ekspresowy i&nbsp;drobnicowy</h1>
+   <p class="lead">Przewieziemy, przeładujemy i&nbsp;przechowamy Państwa towar. Baza w&nbsp;Czechowicach-Dziedzicach, magazyn buforowy przy S1 w&nbsp;stronę Zwardonia.</p>
+   <a class="btn hero-cta" href="#kontakt">Zapytaj o&nbsp;transport</a>
+  </div>
+  <div class="hero-dane">
+   <span><i class="znak"></i>Baza: Czechowice-Dziedzice</span>
+   <span><i class="znak"></i>Magazyn buforowy: pow. żywiecki (S1 / Zwardoń)</span>
+  </div>
+ </div>
+</section>
+
+<section class="sek" id="uslugi">
+ <div class="wrap">
+  <div class="glowa">
+   <div>
+    <h2>Przewieziemy, przeładujemy, przechowamy</h2>
+    <p class="lead">Cztery usługi z&nbsp;jednego miejsca. Jedna rozmowa ze spedytorem i&nbsp;wiadomo, jak i&nbsp;kiedy pojedzie Państwa ładunek.</p>
+   </div>
+   <div class="strzalki"><button id="pPrev" aria-label="Poprzednia usługa">&#8592;</button><button id="pNext" aria-label="Następna usługa">&#8594;</button></div>
+  </div>
+  <div class="pas" id="pas">
+   <article class="karta">
+    <button class="fot tarcza" data-lb="img/trasa-1100.webp" data-pod="Transport ekspresowy" aria-label="Powiększ zdjęcie: transport ekspresowy"><img src="img/trasa-600.webp" srcset="img/trasa-600.webp 600w, img/trasa-1100.webp 1100w" sizes="(max-width:640px) 82vw, (max-width:1180px) 43vw, 25vw" width="600" height="900" alt="Bus dostawczy na zakręcie górskiej drogi" loading="lazy" decoding="async"><span class="nr">Ekspres</span></button>
+    <h3>Transport ekspresowy</h3>
+    <p>Pilna przesyłka jedzie od nadawcy prosto do odbiorcy, bez czekania na zebranie innych ładunków.</p>
+   </article>
+   <article class="karta">
+    <button class="fot tarcza" data-lb="img/drobnica-1100.webp" data-pod="Transport drobnicowy" aria-label="Powiększ zdjęcie: transport drobnicowy"><img src="img/drobnica-600.webp" srcset="img/drobnica-600.webp 600w, img/drobnica-1100.webp 1100w" sizes="(max-width:640px) 82vw, (max-width:1180px) 43vw, 25vw" width="600" height="453" alt="Kartony i zabezpieczony ładunek w zabudowie auta" loading="lazy" decoding="async"><span class="nr">Drobnica</span></button>
+    <h3>Transport drobnicowy</h3>
+    <p>Mniejsze partie: kilka palet, kartony, paczki. Dobre rozwiązanie, gdy ładunek nie wypełnia całego auta.</p>
+   </article>
+   <article class="karta">
+    <button class="fot tarcza" data-lb="img/przeladunek-1100.webp" data-pod="Przeładunki" aria-label="Powiększ zdjęcie: przeładunki"><img src="img/przeladunek-600.webp" srcset="img/przeladunek-600.webp 600w, img/przeladunek-1100.webp 1100w" sizes="(max-width:640px) 82vw, (max-width:1180px) 43vw, 25vw" width="600" height="968" alt="Wózek widłowy z paletą przy otwartym aucie" loading="lazy" decoding="async"><span class="nr">Przeładunek</span></button>
+    <h3>Przeładunki</h3>
+    <p>Towar z&nbsp;auta na auto albo z&nbsp;auta do magazynu i&nbsp;z&nbsp;powrotem. Rozładunek, kompletowanie i&nbsp;załadunek w&nbsp;jednym miejscu.</p>
+   </article>
+   <article class="karta">
+    <button class="fot tarcza" data-lb="img/regaly-1100.webp" data-pod="Magazynowanie" aria-label="Powiększ zdjęcie: magazynowanie"><img src="img/regaly-600.webp" srcset="img/regaly-600.webp 600w, img/regaly-1100.webp 1100w" sizes="(max-width:640px) 82vw, (max-width:1180px) 43vw, 25vw" width="600" height="565" alt="Wózek widłowy między regałami paletowymi w magazynie" loading="lazy" decoding="async"><span class="nr">Magazyn</span></button>
+    <h3>Magazynowanie</h3>
+    <p>Przechowanie towaru w&nbsp;magazynie buforowym w&nbsp;powiecie żywieckim, przy trasie S1 w&nbsp;stronę Zwardonia.</p>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="sek szara" id="magazyn">
+ <div class="wrap mag">
+  <button class="fot tarcza" data-lb="img/magazyn-1600.webp" data-pod="Magazyn buforowy" aria-label="Powiększ zdjęcie: magazyn"><img src="img/magazyn-1100.webp" srcset="img/magazyn-600.webp 600w, img/magazyn-1100.webp 1100w, img/magazyn-1600.webp 1600w" sizes="(max-width:900px) 92vw, 52vw" width="1100" height="733" alt="Wnętrze magazynu z regałami i paletami" loading="lazy" decoding="async"></button>
+  <div>
+   <div class="tyt"><i class="znak"></i><h2>Magazyn buforowy przy S1</h2></div>
+   <p class="lead">Bufor to miejsce, w&nbsp;którym towar może spokojnie poczekać. Nasz magazyn jest w&nbsp;powiecie żywieckim, przy drodze S1 w&nbsp;stronę Zwardonia.</p>
+   <ul class="lista">
+    <li>Odstawienie towaru między dwoma transportami</li>
+    <li>Przeładunek z&nbsp;auta na auto</li>
+    <li>Czekanie na termin dostawy u&nbsp;odbiorcy</li>
+    <li>Skompletowanie partii przed dalszą drogą</li>
+   </ul>
+   <a class="btn" href="#kontakt" data-rodzaj="Magazynowanie">Zapytaj o&nbsp;magazyn</a>
+  </div>
+ </div>
+</section>
+
+<section class="sek trasa" id="trasa">
+ <div class="wrap trasa-g">
+  <div>
+   <h2>Baza w&nbsp;Czechowicach-Dziedzicach, magazyn przy S1</h2>
+   <p class="lead">Na naszym logo bus jedzie drogą pod górami. Tak wygląda też nasza codzienna trasa: z&nbsp;bazy na północ od Bielska-Białej, drogą S1 przez Żywiecczyznę w&nbsp;stronę Zwardonia i&nbsp;granicy ze Słowacją.</p>
+   <svg class="schemat sch-pc" viewBox="0 0 640 170" role="img" aria-label="Schemat trasy: baza Czechowice-Dziedzice, droga S1, magazyn buforowy w powiecie żywieckim, Zwardoń">
+    <path d="M330 118 380 92l22 14 40-40 26 22 34-44 30 32 26-18 50 60" fill="none" stroke="#24486C" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M488 54l14-10 14 14" fill="none" stroke="#B4BAC4" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M30 128H610" stroke="#fff" stroke-width="10" opacity=".14"/>
+    <path d="M30 128H610" stroke="#fff" stroke-width="2" stroke-dasharray="14 10"/>
+    <rect x="250" y="116" width="42" height="24" fill="#1E5BB8"/><text x="271" y="133" text-anchor="middle" fill="#fff" font-weight="800" font-size="15">S1</text>
+    <path d="M40 116l10 4v8l-10 5-10-5v-8Z" fill="#fff"/>
+    <path d="M420 116l10 4v8l-10 5-10-5v-8Z" fill="#1E5BB8" stroke="#fff" stroke-width="2"/>
+    <circle cx="600" cy="128" r="6" fill="#031837" stroke="#B4BAC4" stroke-width="2.5"/>
+    <text x="30" y="160" fill="#fff" font-weight="700" font-size="16">Baza</text>
+    <text x="30" y="100" fill="#C2CDDB" font-size="14">Czechowice-Dziedzice</text>
+    <text x="420" y="160" text-anchor="middle" fill="#fff" font-weight="700" font-size="16">Magazyn buforowy</text>
+    <text x="400" y="30" text-anchor="end" fill="#C2CDDB" font-size="14">pow. żywiecki</text>
+    <text x="610" y="160" text-anchor="end" fill="#C2CDDB" font-size="14">Zwardoń</text>
+   </svg>
+   <svg class="schemat sch-tel" viewBox="0 0 340 250" role="img" aria-label="Schemat trasy: baza Czechowice-Dziedzice, droga S1, magazyn buforowy w powiecie żywieckim, Zwardoń">
+    <path d="M150 210 190 170l20 16 34-44 22 20 30-38 34 52" fill="none" stroke="#24486C" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M40 20V230" stroke="#fff" stroke-width="10" opacity=".14"/>
+    <path d="M40 20V230" stroke="#fff" stroke-width="2" stroke-dasharray="12 9"/>
+    <rect x="22" y="92" width="36" height="22" fill="#1E5BB8"/><text x="40" y="108" text-anchor="middle" fill="#fff" font-weight="800" font-size="14">S1</text>
+    <path d="M40 18l10 4v8l-10 5-10-5v-8Z" fill="#fff"/>
+    <path d="M40 148l10 4v8l-10 5-10-5v-8Z" fill="#1E5BB8" stroke="#fff" stroke-width="2"/>
+    <circle cx="40" cy="230" r="6" fill="#031837" stroke="#B4BAC4" stroke-width="2.5"/>
+    <text x="66" y="26" fill="#fff" font-weight="700" font-size="16">Baza</text><text x="66" y="44" fill="#C2CDDB" font-size="14">Czechowice-Dziedzice</text>
+    <text x="66" y="156" fill="#fff" font-weight="700" font-size="16">Magazyn buforowy</text><text x="66" y="174" fill="#C2CDDB" font-size="14">pow. żywiecki</text>
+    <text x="66" y="235" fill="#C2CDDB" font-size="14">Zwardoń</text>
+   </svg>
+   <div class="punkty">
+    <div><b>Spedycja i&nbsp;transport</b><span>Paweł Psiuk, <a href="tel:+48500429952">500 429 952</a></span></div>
+    <div><b>Administracja i&nbsp;rozliczenia</b><span>Katarzyna Psiuk, <a href="tel:+48696364287">696 364 287</a></span></div>
+   </div>
+  </div>
+  <button class="fot tarcza" data-lb="img/gory-1600.webp" data-pod="W drodze" aria-label="Powiększ zdjęcie: bus w górach"><img src="img/gory-1100.webp" srcset="img/gory-600.webp 600w, img/gory-1100.webp 1100w, img/gory-1600.webp 1600w" sizes="(max-width:900px) 92vw, 46vw" width="1100" height="733" alt="Biały bus zaparkowany przy górskiej drodze" loading="lazy" decoding="async"></button>
+ </div>
+</section>
+
+<section class="sek" id="kontakt">
+ <div class="wrap kont">
+  <div>
+   <h2>Zapytaj o&nbsp;transport albo magazyn</h2>
+   <p class="lead" style="margin-top:16px">Najszybciej telefonicznie. Wolą Państwo napisać? Formularz trafia prosto do nas.</p>
+   <div class="osoby">
+    <div class="osoba">
+     <span class="ini" aria-hidden="true">PP</span>
+     <div><h3>Paweł Psiuk</h3><p class="rola">Spedycja i&nbsp;transport</p>
+      <a class="tel" href="tel:+48500429952"><svg class="ik" aria-hidden="true"><use href="#i-tel"/></svg>500 429 952</a><br>
+      <a class="mail" href="mailto:pawel.psiuk@paka-logistics.com"><svg class="ik" aria-hidden="true"><use href="#i-mail"/></svg><span>pawel.psiuk@<wbr>paka-logistics.com</span></a></div>
+    </div>
+    <div class="osoba">
+     <span class="ini" aria-hidden="true">KP</span>
+     <div><h3>Katarzyna Psiuk</h3><p class="rola">Administracja i&nbsp;rozliczenia</p>
+      <a class="tel" href="tel:+48696364287"><svg class="ik" aria-hidden="true"><use href="#i-tel"/></svg>696 364 287</a><br>
+      <a class="mail" href="mailto:katarzyna@paka-logistics.com"><svg class="ik" aria-hidden="true"><use href="#i-mail"/></svg><span>katarzyna@<wbr>paka-logistics.com</span></a></div>
+    </div>
+   </div>
+   <p class="do-wyceny"><b>Do wyceny przydają się:</b> skąd i&nbsp;dokąd, co jedzie (palety, kartony, wymiary, waga) oraz kiedy odbiór i&nbsp;dostawa.</p>
+  </div>
+
+  <form class="form" id="form" novalidate>
+   <h3>Zapytanie o&nbsp;wycenę</h3>
+   <p class="pod">Odpowiemy z&nbsp;wyceną i&nbsp;terminem.</p>
+   <div class="pola">
+    <div class="pole cale"><span class="lab" style="font-weight:700;font-size:15px;color:var(--navy)">Czego Państwo potrzebują?</span>
+     <div class="rodzaj" role="group" aria-label="Rodzaj usługi">
+      <label><input type="radio" name="rodzaj" value="Transport ekspresowy" checked><span>Transport ekspresowy</span></label>
+      <label><input type="radio" name="rodzaj" value="Transport drobnicowy"><span>Drobnica</span></label>
+      <label><input type="radio" name="rodzaj" value="Przeładunek"><span>Przeładunek</span></label>
+      <label><input type="radio" name="rodzaj" value="Magazynowanie"><span>Magazyn</span></label>
+     </div>
+    </div>
+    <div class="pole"><label for="f-skad">Skąd</label><input id="f-skad" name="skad" placeholder="miejscowość lub kod"></div>
+    <div class="pole"><label for="f-dokad">Dokąd</label><input id="f-dokad" name="dokad" placeholder="miejscowość lub kod"></div>
+    <div class="pole"><label for="f-ladunek">Ładunek</label><input id="f-ladunek" name="ladunek" placeholder="np. 2 palety, 300 kg"></div>
+    <div class="pole"><label for="f-termin">Termin odbioru</label><input id="f-termin" name="termin" type="date"></div>
+    <div class="pole"><label for="f-kto">Imię lub firma</label><input id="f-kto" name="kto" autocomplete="organization"></div>
+    <div class="pole"><label for="f-tel">Telefon</label><input id="f-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel"></div>
+    <div class="pole cale"><label for="f-mail">E-mail</label><input id="f-mail" name="mail" type="email" autocomplete="email"></div>
+    <div class="pole cale"><label for="f-uwagi">Uwagi</label><textarea id="f-uwagi" name="uwagi" placeholder="wymiary, rodzaj towaru, godziny załadunku"></textarea></div>
+   </div>
+   <button class="btn" type="submit">Wyślij zapytanie</button>
+   <p class="zgoda">Wysyłając, zgadzają się Państwo na kontakt w&nbsp;sprawie zapytania.</p>
+   <p class="form-info" id="form-info" hidden>To podgląd strony - w&nbsp;docelowej wersji zapytanie trafi od razu na skrzynkę PaKa Logistics.</p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer class="st">
+ <svg class="st-gory" viewBox="0 0 1600 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0H1600V70L1440 34 1380 52 1290 14 1210 46 1130 22 1040 58 960 30 880 62 0 70Z" fill="#fff"/><path d="M0 69H1600" stroke="#24486C" stroke-width="2" stroke-dasharray="18 12"/></svg>
+ <div class="wrap">
+  <div class="st-g">
+   <div>
+    <a class="logo" href="#start"><svg aria-hidden="true"><use href="#tarcza"/></svg><span><b>PaKa Logistics</b><small>Transport, przeładunki, magazyn</small></span></a>
+    <p class="st-o">Transport ekspresowy i&nbsp;drobnicowy, przeładunki i&nbsp;magazynowanie. Baza: Czechowice-Dziedzice. Magazyn buforowy: pow. żywiecki (S1 / Zwardoń).</p>
+   </div>
+   <div><h4>Usługi</h4><ul><li><a href="#uslugi">Transport ekspresowy</a></li><li><a href="#uslugi">Transport drobnicowy</a></li><li><a href="#uslugi">Przeładunki</a></li><li><a href="#magazyn">Magazyn buforowy</a></li></ul></div>
+   <div><h4>Spedycja</h4><ul><li>Paweł Psiuk</li><li><a href="tel:+48500429952">500 429 952</a></li><li><a href="mailto:pawel.psiuk@paka-logistics.com">pawel.psiuk@<wbr>paka-logistics.com</a></li></ul></div>
+   <div><h4>Rozliczenia</h4><ul><li>Katarzyna Psiuk</li><li><a href="tel:+48696364287">696 364 287</a></li><li><a href="mailto:katarzyna@paka-logistics.com">katarzyna@<wbr>paka-logistics.com</a></li></ul></div>
+  </div>
+  <div class="st-dol">
+   <span>&copy; <span id="rok">2026</span> Paka Logistics Katarzyna Psiuk, NIP 547-206-30-80. Zdjęcia poglądowe.</span>
+   <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=paka-logistics.com&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+ </div>
+</footer>
+
+<div class="mob" id="mob">
+ <a class="btn zadzwon" href="tel:+48500429952"><svg class="ik" aria-hidden="true"><use href="#i-tel"/></svg>Zadzwoń</a>
+ <a class="btn" href="#kontakt">Zapytaj o&nbsp;transport</a>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie">
+ <img alt="">
+ <button class="lb-x" aria-label="Zamknij">&#215;</button>
+ <button class="lb-p" aria-label="Poprzednie">&#8249;</button>
+ <button class="lb-n" aria-label="Następne">&#8250;</button>
+ <div class="lb-dol"><span class="lb-t"></span><span class="lb-c"></span></div>
+</div>
+<script src="app.js" defer></script>
+</body>
+</html>
